@@ -3,7 +3,9 @@
 A Natural Language Processing and Information Retrieval project that helps users discover movies through natural-language queries.
 
 The system combines multi-label genre classification, semantic search, keyword retrieval, and intent parsing to deliver relevant movie recommendations.
-
+<p align="center">
+  <img src="movie-recommender-demo.png" width="850" alt="Movie Recommender Interface">
+</p>
 ## 1. Project Overview
 
 The Movie Recommender System allows users to describe the movies they want in their own words instead of relying only on traditional filters.
