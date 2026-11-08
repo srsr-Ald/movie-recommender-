@@ -1,0 +1,82 @@
+# Movie Recommender System
+
+A hybrid movie recommendation system that combines **Natural Language Processing (NLP)**, semantic search, and traditional information retrieval to recommend movies based on natural-language user queries.
+
+## Project Overview
+
+This project allows users to discover movies by describing what they are looking for in everyday language.
+
+The system analyzes the query, identifies relevant genres and search constraints, retrieves matching movies, and presents personalized recommendations through an interactive Gradio interface.
+
+## Key Features
+
+- **Genre Classification:** Uses a fine-tuned DistilBERT model for multi-label movie genre prediction.
+- **Hybrid Search:** Combines BM25 keyword retrieval with SentenceTransformer semantic similarity.
+- **Intent Detection:** Extracts search constraints such as release years, actors, directors, and explicit genres.
+- **Movie Filtering:** Applies detected constraints to improve recommendation relevance.
+- **Interactive Interface:** Provides a user-friendly experience through Gradio.
+
+## Technical Approach
+
+The recommendation pipeline consists of:
+
+1. User submits a natural-language query.
+2. DistilBERT predicts relevant movie genres.
+3. Intent parsing extracts additional search constraints.
+4. BM25 and semantic similarity retrieve candidate movies.
+5. Hybrid scoring combines retrieval signals.
+6. Filtering and ranking produce the final recommendations.
+
+## Technologies Used
+
+- Python
+- Pandas & NumPy
+- PyTorch
+- Hugging Face Transformers
+- Sentence Transformers
+- BM25
+- Scikit-learn
+- Gradio
+- Google Colab
+
+## Dataset
+
+The project uses a movie dataset containing **4,682 records**, including movie titles, descriptions, genres, release years, ratings, cast, and directors.
+
+## Project Structure
+
+The notebook is organized into the following sections:
+
+- Environment Setup
+- Data Loading
+- Optional Model Training
+- Optional Evaluation & Threshold Calibration
+- Optional Search Index Building
+- Inference & Recommendation
+- Gradio Web Interface
+
+## Getting Started
+
+1. Open `Movie_Recommender.ipynb` in Google Colab.
+2. Configure the required Google Drive paths.
+3. Install the required dependencies.
+4. Ensure the dataset, trained model files, and search index are available.
+5. Run the inference and Gradio interface sections to use the recommendation system.
+
+**Note:** The trained model files, dataset, and search index are stored separately from the notebook. Their required paths must be configured before running inference.
+
+## Skills Demonstrated
+
+- Natural Language Processing
+- Multi-label Text Classification
+- Semantic Search
+- Information Retrieval
+- Hybrid Recommendation Systems
+- Model Evaluation
+- Python Development
+- Interactive Application Development
+
+---
+
+**Project:** Movie Recommender System  
+**Author:** srsr-Ald
